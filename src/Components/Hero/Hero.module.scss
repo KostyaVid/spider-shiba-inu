@@ -1,0 +1,150 @@
+.hero {
+  display: grid;
+  position: relative;
+  grid-template-columns: 750px auto;
+  gap: 25px;
+  grid-template-areas:
+    'title img'
+    'buttons img';
+  @media screen and (max-width: 1800px) {
+    grid-template-columns: 700px 1fr;
+  }
+  @media screen and (max-width: 1500px) {
+    grid-template-columns: 650px 1fr;
+  }
+  @media screen and (max-width: 1400px) {
+    grid-template-columns: 550px 1fr;
+  }
+  @media screen and (max-width: 1200px) {
+    grid-template-columns: 55% 1fr;
+    gap: 15px;
+  }
+  @media screen and (max-width: 767px) {
+    gap: 0;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'title'
+      'img'
+      'buttons';
+  }
+}
+.heroContent {
+  grid-area: title;
+  @media screen and (max-width: 767px) {
+    max-width: 400px;
+    margin: 0 auto;
+    h1 {
+      font-size: 50px;
+    }
+  }
+}
+
+.titleSpan {
+  color: #e11d2e;
+}
+
+.imageContainer {
+  grid-area: img;
+  width: 100%;
+  @media screen and (max-width: 1399px) {
+    img {
+      width: 100%;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    img {
+      max-width: 400px;
+      margin-top: 30px;
+    }
+  }
+}
+
+.whoIsShiba {
+  margin-top: 0.5rem;
+  font-weight: 500;
+  font-size: 2.5rem;
+  color: #71768e;
+  @media screen and (max-width: 767px) {
+    font-size: 15px;
+    margin-top: 10px;
+  }
+}
+
+.titleDescription {
+  margin-top: 4rem;
+  font-size: 3.2rem;
+  color: #a0a3b5;
+  @media screen and (max-width: 767px) {
+    font-size: 22px;
+    margin-top: 40px;
+  }
+}
+
+.buttons {
+  grid-area: buttons;
+  @media screen and (max-width: 767px) {
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+.containerButton {
+  margin-top: 4.6rem;
+  @media screen and (max-width: 1200px) {
+    flex-direction: column;
+  }
+  @media screen and (max-width: 767px) {
+    margin-top: 40px;
+  }
+}
+
+.buttonJoin {
+  font-size: 25px;
+  z-index: 1;
+  @media screen and (max-width: 1800px) {
+    font-size: 22px;
+  }
+  @media screen and (max-width: 1400px) {
+    font-size: 18px;
+  }
+}
+
+.buttonMore {
+  z-index: 1;
+  margin-left: 2.5rem;
+  font-size: 25px;
+  @media screen and (max-width: 1800px) {
+    font-size: 22px;
+  }
+  @media screen and (max-width: 1400px) {
+    font-size: 18px;
+  }
+  @media screen and (max-width: 1200px) {
+    margin-top: 2.5rem;
+    margin-left: 0;
+  }
+}
+
+.buttonContract {
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.ContractTitle {
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.2);
+  text-align: left;
+}
+.ContractAddress {
+  font-size: 2.5rem;
+  color: rgba(255, 255, 255, 0.4);
+  text-align: left;
+  @media screen and (max-width: 1200px) {
+    font-size: 1.4vw;
+  }
+  @media screen and (max-width: 767px) {
+    font-size: 1.8rem;
+  }
+}

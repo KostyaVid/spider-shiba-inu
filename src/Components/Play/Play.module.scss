@@ -1,0 +1,125 @@
+.play {
+  h3 {
+    font-size: 3rem;
+    font-weight: 700;
+  }
+  p {
+    margin-top: 2rem;
+  }
+}
+.subTitle {
+  opacity: 0.5;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.game {
+  margin-top: 50px;
+  padding: 3.6rem 5rem;
+  background-color: #071022;
+  border-radius: 30px;
+  gap: 4.3rem;
+  p {
+    opacity: 0.6;
+    font-size: 2.4rem;
+  }
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+    padding: 10px 10px 29px 10px;
+    max-width: 490px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.picture {
+  display: block;
+  flex: 0 0 649px;
+  position: relative;
+  @media screen and (max-width: 1500px) {
+    flex: 0 0 50%;
+  }
+  @media screen and (max-width: 767px) {
+    flex: 0 0 auto;
+  }
+}
+
+.city {
+  width: 100%;
+  z-index: 1;
+  pointer-events: none;
+  user-select: none;
+}
+
+.shiba,
+.goblin {
+  position: absolute;
+  pointer-events: none;
+  user-select: none;
+  animation: spinGame 3s ease-in-out infinite alternate-reverse;
+}
+
+.shiba {
+  width: 30%;
+  left: 10%;
+  top: 10%;
+}
+.goblin {
+  width: 30%;
+  right: 10%;
+  top: 10%;
+}
+
+@keyframes spinGame {
+  from {
+    transform: scale(0.2);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.cards {
+  margin-top: 5rem;
+  gap: 4rem;
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.card {
+  border-radius: 30px;
+  background-color: #ff9429;
+  padding: 3.5rem 3rem;
+  gap: 3rem;
+  h3 {
+    @media screen and (max-width: 767px) {
+      text-align: center;
+      margin-top: 20px;
+    }
+  }
+  p {
+    opacity: 0.8;
+    @media screen and (max-width: 767px) {
+      text-align: center;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+    padding: 20px 20px 50px 20px;
+    max-width: 490px;
+  }
+}
+
+.cardImg {
+  width: 20%;
+  @media screen and (max-width: 767px) {
+    width: 134px;
+  }
+}
+
+.card_Megaphone {
+  background-color: #067ccb;
+}

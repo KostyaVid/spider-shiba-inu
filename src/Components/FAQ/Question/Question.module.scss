@@ -1,0 +1,57 @@
+.question {
+  margin: 2rem auto 0 auto;
+  padding: 2.5rem 3.5rem;
+  max-width: 1036px;
+  background-color: #384d70;
+  border-radius: 15px;
+  .title {
+    font-size: 20px;
+    font-weight: 600;
+    @media screen and (max-width: 767px) {
+      font-size: 16px;
+    }
+    @media screen and (max-width: 568px) {
+      font-size: 14px;
+    }
+  }
+  .description {
+    font-size: 18px;
+    opacity: 0.6;
+    margin-top: 2rem;
+    @media screen and (max-width: 568px) {
+      font-size: 13px;
+    }
+  }
+
+  .header {
+    gap: 15px;
+  }
+
+  .button {
+    width: 40px;
+    height: 40px;
+    background-color: #e11d2e;
+    border-radius: 50%;
+    position: relative;
+    border: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
+    flex-shrink: 0;
+    @media screen and (max-width: 568px) {
+      width: 35px;
+      height: 35px;
+    }
+  }
+}
+
+.arrow {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  user-select: none;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease;
+}
+.activeArrow {
+  transform: translate(-50%, -50%) rotate(180deg);
+}

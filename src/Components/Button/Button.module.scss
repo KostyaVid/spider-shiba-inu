@@ -1,0 +1,35 @@
+.button {
+  padding: 1em 2em;
+  color: #fff;
+  height: max-content;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  position: relative;
+  z-index: 2;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  @media screen and (max-width: 767px) {
+    display: block;
+    font-size: 18px;
+    padding: 20px 15px;
+  }
+}
+
+.primary {
+  background-color: #e11d2e;
+}
+
+.dark {
+  background-color: #ac1216;
+}
+
+.outline {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.fill {
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+}

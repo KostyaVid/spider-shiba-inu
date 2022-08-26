@@ -1,0 +1,95 @@
+.roadmap {
+  padding-bottom: 8.2rem;
+  @media screen and (max-width: 568px) {
+    margin-top: 70px;
+    padding-bottom: 150px;
+    height: 80vh;
+    overflow-y: scroll;
+    h2 {
+      font-size: 40px;
+    }
+  }
+}
+
+.roads {
+  margin-top: 50px;
+  position: relative;
+}
+.roads .road + .road {
+  margin-top: 60px;
+}
+
+.road {
+  position: relative;
+  &:after {
+    content: '';
+    position: absolute;
+    left: calc(50% - 5px);
+    top: 50%;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: rgb(225, 29, 46);
+    border: 2px solid rgba(225, 255, 255, 0.5);
+    z-index: 2;
+    @media screen and (max-width: 568px) {
+      left: -5px;
+    }
+  }
+}
+
+@media screen and (min-width: 569px) {
+  .road:nth-child(2n) {
+    justify-content: flex-end;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .road {
+    justify-content: center;
+  }
+}
+
+.road:first-child,
+.road:nth-child(2) {
+  &::before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: calc(50% + 60px);
+    top: 50%;
+    left: 50%;
+    background-color: rgb(225, 29, 46);
+    z-index: 1;
+    @media screen and (max-width: 568px) {
+      left: 0px;
+    }
+  }
+}
+.road:nth-child(2) {
+  &::before {
+    height: 50%;
+    top: 0%;
+  }
+}
+
+.road:nth-child(4),
+.road:nth-child(5) {
+  &:after {
+    background-color: #fff;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+  }
+}
+
+.line {
+  position: absolute;
+  height: 93%;
+  width: 2px;
+  background-color: #384d70;
+  top: 20rem;
+  left: 50%;
+  @media screen and (max-width: 568px) {
+    top: 200px;
+    left: 0px;
+  }
+}

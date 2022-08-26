@@ -1,0 +1,85 @@
+.nav {
+  flex-grow: 1;
+  margin-left: 7rem;
+  @media screen and (max-width: 1400px) {
+    display: none;
+    margin-left: 0;
+  }
+}
+
+.activeMenu {
+  display: flex;
+  position: absolute;
+  width: 85%;
+  top: 90%;
+  right: 6rem;
+  background-color: rgb(56, 77, 112);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  padding: 2rem 4rem;
+  border-radius: 10px;
+  z-index: 2;
+  @media screen and (max-width: 767px) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 0;
+    z-index: 2;
+    background-color: #384d70;
+    padding: 90px 16px;
+  }
+}
+
+.items {
+  margin: 0;
+  padding: 0;
+  gap: 2.5rem;
+  @media screen and (max-width: 1400px) {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+  @media screen and (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 2vh;
+  }
+}
+
+.item {
+  flex: 0 0 auto;
+  @media screen and (max-width: 1800px) {
+    a {
+      font-size: 1.4rem;
+    }
+  }
+  @media screen and (max-width: 1500px) {
+    a {
+      font-size: 1.2rem;
+    }
+  }
+  @media screen and (max-width: 1400px) {
+    a {
+      font-size: 2.8rem;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    a {
+      font-size: 3.5vw;
+    }
+  }
+  @media screen and (max-width: 575px) {
+    &:nth-child(6) {
+      display: none;
+    }
+    a {
+      font-size: 5.1vw;
+    }
+  }
+}
+
+.buttonMenu {
+  margin-left: auto;
+}

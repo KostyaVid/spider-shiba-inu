@@ -1,0 +1,71 @@
+.wrapper {
+  background-color: #101d3f;
+}
+.tokenomics {
+  position: relative;
+}
+
+.graff,
+.shiba {
+  position: absolute;
+  top: calc(50% + 70px);
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.graff {
+  width: 27.71%;
+}
+
+.shiba {
+  width: 10.078%;
+}
+@media screen and (max-width: 767px) {
+  .graff,
+  .shiba {
+    top: calc(250px);
+    transform: translate(-50%, -50%);
+  }
+  .graff {
+    width: 95%;
+    max-width: 300px;
+  }
+  .shiba {
+    width: 50%;
+    max-width: 150px;
+  }
+}
+
+.cards {
+  margin-top: 92px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  row-gap: 25px;
+  padding-bottom: 100px;
+  @media screen and (max-width: 767px) {
+    display: block;
+    margin-top: 380px;
+    height: 40vh;
+    padding-bottom: 50px;
+    overflow-y: auto;
+  }
+}
+
+.cardTok {
+  width: 50%;
+  @media screen and (max-width: 767px) {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+.cardTok:nth-child(2n) {
+  display: flex;
+  justify-content: flex-end;
+  @media screen and (max-width: 767px) {
+    justify-content: center;
+  }
+}

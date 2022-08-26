@@ -1,0 +1,100 @@
+.bg {
+  background-color: #162758;
+}
+.mainFooter {
+  padding-bottom: 116px;
+  margin-top: 69px;
+}
+.links {
+  margin-top: 11rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  position: relative;
+  z-index: 2;
+  @media screen and (max-width: 998px) {
+    flex-wrap: wrap;
+  }
+  @media screen and (max-width: 568px) {
+    gap: 30px;
+    margin-top: 50px;
+  }
+}
+.link {
+  display: flex;
+  width: 108px;
+  height: 108px;
+  background-color: #e11d2e;
+  border-radius: 15px;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  img {
+    width: 60%;
+  }
+  @media screen and (max-width: 568px) {
+    width: 60px;
+    height: 60px;
+  }
+}
+.images {
+  position: relative;
+}
+.map {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.shiba {
+  display: block;
+  width: 256px;
+  margin: 80px auto 0 auto;
+}
+
+.buttonContract {
+  display: block;
+  margin: 50px auto 0 auto;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  max-width: 699px;
+  border-radius: 50px;
+  position: relative;
+  z-index: 2;
+}
+
+.ContractTitle {
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.4);
+  text-align: left;
+}
+.ContractAddress {
+  font-size: 2.5rem;
+  color: rgba(255, 255, 255, 0.8);
+  text-align: left;
+  @media screen and (max-width: 1200px) {
+    font-size: 1.4vw;
+  }
+  @media screen and (max-width: 767px) {
+    font-size: 1.8rem;
+  }
+}
+
+.subFooter {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  p {
+    text-align: center;
+    font-size: 2rem;
+    opacity: 0.4;
+  }
+  @media screen and (max-width: 568px) {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}

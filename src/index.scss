@@ -1,0 +1,185 @@
+@import-normaize;
+
+@font-face {
+  font-family: 'Nunito';
+  src: local('Nunito-ExtraBold'), url(./../public/fonts/Nunito-ExtraBold.woff2) format('woff2'),
+    url(./../public/fonts/Nunito-ExtraBold.woff) format('woff'),
+    url(./../public/fonts/Nunito-ExtraBold.ttf) format('ttf');
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  src: local('SFProDisplay-Bold'), url(./../public/fonts/SFProDisplay-Bold.woff2) format('woff2'),
+    url(./../public/fonts/SFProDisplay-Bold.woff) format('woff'),
+    url(./../public/fonts/SFProDisplay-Bold.ttf) format('ttf');
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'SF Pro Display';
+  src: local('SFProDisplay-Heavy'), url(./../public/fonts/SFProDisplay-Heavy.woff2) format('woff2'),
+    url(./../public/fonts/SFProDisplay-Heavy.woff) format('woff'),
+    url(./../public/fonts/SFProDisplay-Heavy.ttf) format('ttf');
+  font-weight: 900;
+}
+@font-face {
+  font-family: 'SF Pro Display';
+  src: local('SFProDisplay-Medium'),
+    url(./../public/fonts/SFProDisplay-Medium.woff2) format('woff2'),
+    url(./../public/fonts/SFProDisplay-Medium.woff) format('woff'),
+    url(./../public/fonts/SFProDisplay-Medium.ttf) format('ttf');
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'SF Pro Display';
+  src: local('SFProDisplay-Regular'),
+    url(./../public/fonts/SFProDisplay-Regular.woff2) format('woff2'),
+    url(./../public/fonts/SFProDisplay-Regular.woff) format('woff'),
+    url(./../public/fonts/SFProDisplay-Regular.ttf) format('ttf');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'SF Pro Display';
+  src: local('SFProDisplay-Semibold'),
+    url(./../public/fonts/SFProDisplay-Semibold.woff2) format('woff2'),
+    url(./../public/fonts/SFProDisplay-Semibold.woff) format('woff'),
+    url(./../public/fonts/SFProDisplay-Semibold.ttf) format('ttf');
+  font-weight: 600;
+}
+
+html {
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #fff;
+  @media screen and (max-width: 1800px) {
+    font-size: 9px;
+  }
+  @media screen and (max-width: 1400px) {
+    font-size: 8px;
+  }
+  @media screen and (max-width: 1200px) {
+    font-size: 7px;
+  }
+  @media screen and (max-width: 899px) {
+    font-size: 6px;
+  }
+}
+
+body,
+ul,
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+section,
+article,
+div,
+header,
+footer,
+main {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #101932;
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 8rem;
+  line-height: 112%;
+}
+h2 {
+  font-size: 4.5rem;
+  font-weight: 500;
+  text-align: center;
+}
+h3 {
+  font-weight: 600;
+  font-size: 3.5rem;
+}
+h4 {
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+p {
+  font-weight: 400;
+  font-size: 2.8rem;
+}
+ul {
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.7rem;
+  font-weight: 600;
+  opacity: 0.8;
+}
+
+section {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 9rem;
+  padding-right: 9rem;
+  width: 100%;
+  max-width: 1920px;
+  @media screen and (max-width: 1200px) {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+  @media screen and (max-width: 767px) {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+}
+
+.d-flex {
+  display: flex;
+}
+
+.f-d-column {
+  flex-direction: column;
+}
+
+.al-items-center {
+  align-items: center;
+}
+.justify-content-between {
+  justify-content: space-between;
+}
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-end {
+  justify-content: flex-end;
+}
+
+.opacity08 {
+  opacity: 0.8;
+}
+

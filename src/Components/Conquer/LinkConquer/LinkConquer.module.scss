@@ -1,0 +1,12 @@
+.linkConquer {
+  display: inline-block;
+  mix-blend-mode: luminosity;
+  opacity: 0.1;
+  height: 50px;
+  @media screen and (max-width: 1100px) {
+    height: 30px;
+  }
+  img {
+    height: 100%;
+  }
+}

@@ -1,0 +1,32 @@
+.header {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  position: relative;
+}
+
+.logo {
+  width: 23rem;
+  position: relative;
+  z-index: 99;
+}
+
+.button {
+  margin-left: 7rem;
+  flex: 0 0 auto;
+}
+
+.buttonMobile {
+  position: fixed;
+  bottom: 50px;
+  left: 30px;
+  width: calc(100% - 60px);
+}
+
+.burger {
+  width: 40px;
+  height: 40px;
+  background-color: #384d70;
+  border-radius: 5px;
+  position: relative;
+  z-index: 99;
+}

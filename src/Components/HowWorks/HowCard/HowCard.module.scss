@@ -1,0 +1,14 @@
+.howCard {
+  background-color: #384d70;
+  padding: 3rem 4rem;
+  border-radius: 20px;
+  max-width: 490px;
+  height: 100%;
+  img {
+    width: 120px;
+    margin-bottom: 30px;
+    @media screen and (max-width: 767px) {
+      width: 80px;
+    }
+  }
+}
