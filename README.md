@@ -1,4 +1,4 @@
-## ABout
+## About
 Competition project for landing website layout
 
 ### Tools:
